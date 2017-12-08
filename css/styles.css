@@ -14,14 +14,15 @@ body {
 }
 
 a:link {
-	color: #afa1a4;
+	color: #616468;
 }
 
 a:visited {
-	color: #afa1a4;
+	color: #728db2;
 }
 
-.directory:hover {
+
+a:hover {
   text-decoration: underline;
   color: #afa1a4;
 }
@@ -49,6 +50,23 @@ img {
 	width: 51%;
 	text-align: center;
 	Add margin: 10px auto;*/
-	width: 69%;
+width: 69%;
 margin: 10px auto;
 }
+
+.websiteImage {
+	height: 250px;
+	width: 500px;
+	margin: 20px auto;
+
+}
+
+.webpageTitle {
+	margin: 20px;
+	color: #728db2;
+}
+
+.websiteDescription {
+ padding: 10px;
+}
+
