@@ -1,99 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<title>My Portfolio</title>
+  <title>My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="jumbotron">
-	
-</div>
-<div class="container">
-	<h1 class="text-center" id="title"> Joseph Escobedo</a></h1>
-	<img src="img/me.jpg">
-	<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active directory" href="#about"><u>About</u></a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link directory" href="#projects"><u>Projects</u></a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link directory" href="#contact"><u>Contact</u></a>
-  </li>
-</ul>
-	<div class="row">
-		<div class="col-md-12">
-			<h2 class="text-center" id="about">About</h2>
-			<div class="boxed">
-				<p class="text-center">Hello! My Name is Joseph Escobedo. A little about me, I am a 23 year old, self taught programmer. I've been learning web development and making projects for the last year and a half. Starting out of course, was tricky as it is learning any new skill, but after a lot of hard work, late nights and cups upon cups of coffee, I am ready to start a career in the tech industry. So lets get to coding, grab a coffee and change the world! How do you like yours? I like mine with hazelnut cream and bug free!</p>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			 <h1 class="text-left">Joseph Escobedo</h1>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<!-- <li class="active"><a href="#">Joseph Escobedo</a></li> -->
+					<li><a href="#aboutMe">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contactMe">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel"> 		
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="img/space.jpg">
+				<div class="carousel-caption">
+					<h1>Get To Know Me</h1>
+					<br>
+					<button type="button" class="btn btn-default"><a href="#aboutMe" id="headerText">Get Started</a></button>
+				</div>
+			</div> <!--End Active-->
+				<div class="item">
+					<img src="img/winterplanet.jpg">
+				</div>
+				<div class="item">
+					<img src="img/redskies.jpg">
+				</div>
+		</div>
+		<!-- Start of slider controls-->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div> <!-- End of slider-->
+	<div class="container text-center" id="aboutMe">
+		<h2>About Me</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-4">
+				<img src="img/me.jpg" id="icon" class="img">
 			</div>
 		</div>
 	</div>
-	<h2 class="text-center" id="projects">Projects</h2>
-	<div class="row">
-		<div class="col-md-6">
-			<h2 class="text-center webpageTitle"><a href="https://joeescob1023.github.io/piperthedog/" target="_target"><u>Piper The Dog</u></a></h2>
-			<img class="websiteImage" src="img/piperthedog.PNG">
-			<p class="text-center websiteDescription">This was the very first webpage I made as I started to become comfortable with HTML and CSS</p>
-		</div>
-		<div class="col-md-6">
-			<h2 class="text-center webpageTitle">
-				<a href="https://joeescob1023.github.io/investorproject/index.html" target="_target"><u>Eclipes Island</u></a>
-			</h2>
-			<img class="websiteImage" src="img/eclipesIsland.PNG">
-			<p>
-				This was a mock up project I made of a resort vacation spot. Has mulitple pages and I took the next step in becoming better with CSS and HTML.
-			</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h4>A Little About Me</h4>
+				<p>I am a 23 year old self-taught programmer from Las Vegas Nevada. I started programming about a year and a half ago and spend my days coding, polishing up my skills, and learning as much as I can. </p>
+				<p>Below are a list of my developer skills, projects I have created, my GitHub profile so you can see my progress over the last few months, and contact information. So lets get to coding, grab a coffee and change the world! How do you like yours? I like mine with hazelnut cream and bug free!</p>
+			</div>
+			<div class="col-md-6">
+				<img src="img/helloworld.jpg" class="img-responsive">
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<h2 class="text-center webpageTitle"><a href="https://joeescob1023.github.io/animalwiki/" target="_target"><u>Animal Wiki</u></a></h2>
-			<img class="websiteImage" src="img/animalWiki.PNG">
-			<p class="text-center websiteDescription">Animal Wiki was the first time I used bootstrap and Javascript. It has 3 animals you can search for.</p>
+	<div class="container" id="skills">
+		<div class="row">
+			<h2 class="text-center">Skills</h2>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/html5.png" class="img-responsive">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/css3.png" class="img-responsive">
 		</div>
-		<div class="col-md-6">
-			<h2 class="text-center webpageTitle"><a href="https://joeescob1023.github.io/Animal-Shelter/" target="_target"><u>Furry Friends Rescue</u></a></h2>
-			<img class="websiteImage" src="img/furryFriendsRescue.PNG">
-			<p class="text-center websiteDescription">Furry Friends Rescue is my most recent and best project to date. Its a mock up animal shelter where you can choose the animals you want visit and hopefully adopt. This website put my JavaScript to the test and I am really happy with the way it came out.</p>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/javascript.png" class="img-responsive">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/bootstrap.png" class="img-responsive">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/jquery.gif" class="img-responsive">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/nodejs.png" class="img-responsive">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/express.png" class="img-responsive">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/mongodb.png" class="img-responsive">
+			</div>
+	</div>
+	</div>
+</div>
+	<div class="container" id="projects">
+			<h4 id="initially-showing"><u>Care To View Some Of My Projects?</u></h4>
+				<div id="hidden">
+					<h4><a href="https://github.com/joeEscob1023" target="_target"><u>View All On GitHub</u></a></h4>
+					<div class="row">
+					<div class="col-sm-6">
+						<h5 class="text-left"><a href="https://cryptic-brushlands-89507.herokuapp.com/" class="linkBold">Yelp Camp /w Colt Steel's Web Developer Boot Camp</a></h5>
+						<img src="img/webdev.png" class="img-responsive">
+					</div>
+					<div class="col-sm-6">
+						<div class="text-left">
+							<h5><em>Built With..</em></h5>
+							<ul class="lists">
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>BootStrap</li>
+								<li>JavaScript</li>
+								<li>NodeJS</li>
+								<li>EJS</li>
+								<li>Express</li>
+								<li>MongoDB</li>
+								<li>Mongoose</li>
+								<li>Passport.js</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<h5 class="text-left"><a href="https://joeescob1023.github.io/Animal-Shelter/" class="linkBold">Mock Animal Shelter</a></h5>
+						<img src="img/animalshelter.png" class="img-responsive">
+					</div>
+					<div class="col-sm-6">
+						<div class="text-left">
+							<h5><em>Built With..</em></h5>
+							<ul class="lists">
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>BootStrap</li>
+								<li>JavaScript</li>
+								<li>jQuery</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				
+			</div>
 		</div>
 	</div>
-	<h2 class="text-center" id="contact">Contact Me</h2>
-	<div class="row">
-		<div class="col-md-8">
-			<h2 class="text-center" id="email"><u><em>Contact Me:</em></u></h2> 
-				<h3 class="text-center">Email: <u> <a href="mailto:joe_escob1023@live.com" target="_target">joe_escob1023@live.com</a></u></h3>
-				<h3 class="text-center">Phone: <u>702-910-1575</u></h3>
+	<footer class="container-fluid text-center">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Contact Me</h3>
+				<br>
+				<h4 class="text-center" id="emailMargin">Email: <u> <a href="mailto:joe_escob1023@live.com" target="_target" id="email">joe_escob1023@live.com</a></u></h4>
+			</div>
+			<div class="col-sm-4" id="contactMe">
+				<h3>Connect / Resume</h3>
+				<a href="https://www.facebook.com/joe.escobedo.372" target="_target" class="fa fa-facebook"></a>
+				<a href="https://github.com/joeEscob1023" target="_target" class="fa fa-github"></a>
+				<a href="download/JosephEscobedoResume-Dec.pdf" download="Joseph Escobedo Resume 2017" class="fa fa-download"></a>
+			</div>
+			<div class="col-sm-4">
+				<img src="img/piper.jpg" class="icon" id="footerImg">	
+			</div>
 		</div>
-		<div class="col-md-4 contactInfo">
-<br/>
-      <a class="btn btn-default paddingBTN" href="https://github.com/joeEscob1023" target="_target"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
-      <br/>
-      <a class="btn btn-default paddingBTN" href="https://www.facebook.com/joe.escobedo.372" target="_target"><i class="fa fa-facebook-official" aria-hidden="true"></i>
- Facebook</a>
-    </div>
-  </div>
-  <hr>
-  <div class="footer text-center">
-   <h3>
-      <i class="fa fa-rocket" aria-hidden="true"></i>
-     <a href="#title"> Joseph Escobedo  </a><span class="fa fa-star" aria-hidden="true"></span>
-     
-     <a href="#about"> About Me </a><span class="fa fa-star" aria-hidden="true"></span>
-
-
-     <a href="#projects"> Projects </a><span class="fa fa-star"         aria-hidden="true"></span>
-     
-     <a href="#contact"> Contact Me </a><span class="fa fa-rocket oneRocket"  aria-hidden="true"></span>
-   </h3>
-   <p>Copyright @ Joseph Escobedo 2017. All Rights Reserved</p>
-  </div>
+		<div class="text-center" id="end">
+			<h3>
+      	<i class="fa fa-rocket" aria-hidden="true"></i>
+      	<a href="#aboutMe"> About Me </a><span class="fa fa-star" aria-hidden="true"></span>
+      	<a href="#projects"> Projects </a><span class="fa fa-star" aria-hidden="true"></span>
+    	<a href="#contactMe"> Contact Me </a><span class="fa fa-rocket" id="oneRocket" aria-hidden="true"></span>
+   	</h3>
+		</div>
+	</footer>
+	<hr>
+		<div class="text-center">
+			<p>Copyright @ Joseph Escobedo 2017. All Rights Reserved</p>
+		</div>
 	</div>
-
- <script src="https://use.fontawesome.com/0bdc39386b.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
-</html>
+</html> 
