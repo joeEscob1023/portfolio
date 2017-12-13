@@ -17,3 +17,8 @@ $("a").on('click', function(event) {
       });
     } 
   });
+
+$("#initially-showing").click(function() {
+  $("#hidden").slideToggle();
+});
+
