@@ -1,105 +1,155 @@
-.jumbotron {
-	margin: 5px auto;
-	/*padding: 30px;*/
-	background: url("../img/jumbotron.jpg") no-repeat center center;
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #5E4485;
+  color: #fff;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: 0;
 }
 
-body {
-	padding: 10px;
-	background-color: #dae5e1;
-	font-family: sans-serif;
-	}
 
-.directory {
+.navbar-brand {
+  float: left;
+  min-height: 55px;
+  padding: 0 15px 15px;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+  color: #fff;
+  background-color: #5E4485;
+}
+
+#headerText a:link {
+  text-decoration: none;
+  color: white;
+}
+
+#headerText a:visited {
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+a#headerText:hover {
+  text-decoration: none;
+  opacity: .5;
+}
+
+
+a#headerText:visited {
+  color: #fff;
+}
+
+
+.navbar-inverse .navbar-nav li a {
+  color: #D5D5D5;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color:#fff;
+ }
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+.btn {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 22px;
+  background-color: #5E4485;
+  border: 2px solid #fff;
+}
+
+.btn:hover {
+  background-color: #9c4fa3;
+}
+
+.container {
+  margin: 4% auto;
+}
+
+#initially-showing:hover {
+  cursor: pointer;
+
+}
+
+#hidden {
+  display: none;
+}
+
+#icon {
+  max-width: 200px;
+  margin: 1% auto;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+h5 a.linkBold:link {
+  color: black !important;
+  text-decoration: underline;
+}
+
+h5 a.linkBold:visited {
+  color: #0a7bbf !important;
+}
+
+h5 a.linkBold:hover {
+  color: #5E4485;
+}
+
+
+ul.lists {
+  list-style-type: none;
+  font-weight: 700;
+}
+
+
+footer {
+  width: 100%;
+  background-color: #5E4485;
+  padding: 5%;
+  color: #fff;
+}
+
+#end a {
+  color: white !important;
+}
+
+#end a:hover {
+  color: #f9e0f9 !important;
+  text-decoration: underline;
   cursor: pointer;
 }
 
-a:link {
-	color: #616468;
+#end a:visited {
+  color: #d2d5db !important;
 }
 
-a:visited {
-	color: #728db2;
-}
-
-
-a:hover {
+a#email:link {
+  color: white;
   text-decoration: underline;
-  color: #afa1a4;
 }
 
-#title {
-	letter-spacing: .3em;
+
+.fa {
+  padding: 10px;
+  color: #fff;
+  font-size: 40px !important;
 }
 
-ul {
-	font-size: 1.5em;
+.fa-star:before {
+  color: white;
 }
 
-img {
-    height:250px;
-    width: 230px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 10px 10px 5px grey;
-    border-radius: 30px;
-}
-
-.boxed {
-/*	display: inline-block;
-	width: 51%;
-	text-align: center;
-	Add margin: 10px auto;*/
-width: 69%;
-margin: 10px auto;
-}
-
-.websiteImage {
-	height: 250px;
-	width: 500px;
-	margin: 20px auto;
-
-}
-
-.webpageTitle {
-	margin: 20px;
-	color: #728db2;
-}
-
-.websiteDescription {
- padding: 10px;
-}
-
-#email {
-	margin: 20px;
-}
-
-#lowerEmail {
-	margin: 50px;
-}
-
-.btn-default {
-  background-color: rgba(0, 0, 0, 0.74);
-  border: rgba(0, 0, 0, 0.74);
-  color: rgba(0, 0, 0, 74);
-  font-size: 1.5em;
-}
-
-.paddingBTN {
-  padding-top: 5%;
-  padding-bottom: 5%; 
-  width: 200px;
-  margin-bottom: 25px;
-}
-
-hr {
-	border: 0; 
-  height: 1px; 
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+.fa-rocket:before {
+  color: white;
 }
 
 .fa-rocket {
@@ -110,10 +160,52 @@ hr {
 transform: scale(-1, 1);
 }
 
-.oneRocket {
+#oneRocket {
     -moz-transform: scale(1, 1);
 -webkit-transform: scale(1, 1);
 -o-transform: scale(1, 1);
 -ms-transform: scale(1, 1);
 transform: scale(1, 1);
+}
+
+img#footerImg {
+  border-radius: 50%;
+}
+
+.fa:hover {
+  color: #D5D5D5;
+  text-decoration: none;
+
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media (max-width: 900px) {
+  .fa {
+  font-size: 20px;
+  padding: 10px;
+  }
+  .img-responsive {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+  #icon {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  #end {
+    display: none;
+  }
 }
